@@ -1,0 +1,27 @@
+.inspect {
+    font-style: italic;
+    border-bottom: 2px dashed black;
+}
+
+
+footer{
+    background-color: bisque;
+    padding: 50px 0px 50px 0px; 
+
+    overflow:hidden;
+}
+
+footer ul {
+    list-style-type: none;
+}
+
+footer ul.horizontal-list > li {
+    float: left;
+}
+
+footer ul.horizontal-list ~ div {
+    font-size: 2em;
+    font-weight: bold;
+
+    clear: left;
+}

@@ -6,59 +6,82 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="stylesheet/standard.css">
+    <style>
+        .red {
+            background-color: red;
+        }
+        
+        .green {
+            background-color: forestgreen;
+        }
+        
+        .blue {
+            background-color: blue;
+        }
 
+    </style>
 </head>
 <html>
     <body>
-        <h1>A Basic Loop</h1>
-        <em>Random Thought: Satisfying mechanics and gameplay are underscored by an intuitive core.</em>
-        
-
+        <header class="jumbotron">
+            <h1>A Basic Loop</h1>
+            <em>Random Thought: Satisfying mechanics and gameplay are underscored by an intuitive core.</em>
+            
+        </header>
         <!--Provide necessary background-->
-        <article>
+        <article class="container">
             <h3>Background</h3>
-            <p>
-            On one side we see various shapes composed of square blocks steadly descending downwards, endlessly
-            stacking upwards. Whenever all gaps are filled in a particular row, all blocks are cleared in said
-            row. Note that only the blocks are cleared, and not the attached shape. Eventually, the shapes fall
-            at a more rapid pace, but all else remains the same.
-            </p>
-            <p>
-            On another side, there is a world of sharp edges and pleasant colors. It seems be from the perspective
-            of some person traveling this world, breaking apart dirt, stone, and trees. Eventually, they place
-            new stone onto the ground, and it is clear that they are building. And so this cycle continues, of
-            creation and destruction, with different looking blocks. There seems to be a day and night cycle.
-            </p>
-            <p>
-            On yet another side we hear loud blasts and see rabid gunplay above the shoulder of what appears to be
-            some armed woman running through fields. On her back is an oversized backpack and she is wearing what
-            seems to be a sturdy helmet. She constantly enters buildings, putting all she can find in her bag.
-            <i>13 remaining </i> says the screen, followed by the sound of gunfire... and now <i>9 remaining</i>. As
-            the woman takes a shot at man in the distance, the screen says <i>8 remaining</i>. The sporadic violence
-            continues until the woman is suddenly the focus of heavy gunfire a screen says <i>You placed 6th</i>!
-            </p>
-            <p>
-            These each refer to some game, and what might be observed from a <i title="quick, relative to the length of the game"> quick look</i>
-            of regular gameplay. Can you guess what each example references? One thing each of these have in common is they
-            describe the gameflow of certain popular games. What makes them popular is beyond the scope of this
-            random thought, but I believe that they each vary in complexity when it comes to learning their respective gameplay 'basics'.
-            </p>
+            <div class="row">
+                <p class="col-12 col-md-6 col-lg-4">
+                On one side we see various shapes composed of square blocks steadly descending downwards, endlessly
+                stacking upwards. Whenever all gaps are filled in a particular row, all blocks are cleared in said
+                row. Note that only the blocks are cleared, and not the attached shape. Eventually, the shapes fall
+                at a more rapid pace, but all else remains the same. This continues until the increase in speed 
+                seems too much, and less lines are cleared as the blocks eventually fill the screen.
+                </p>
+                <p class="col-12 col-md-6 col-lg-4">
+                On another side there is a world of sharp edges and pleasant colors. It seems be from the perspective
+                of some person traveling this world, breaking apart dirt, stone, and trees. Eventually, they place
+                new stone onto the ground, and it is clear that they are building. And so this cycle continues, of
+                creation and destruction, with different looking blocks. There seems to be a day and night cycle.
+                </p>
+                <p class="col-12 col-md-6 col-lg-4">
+                On yet another side there are loud blasts and rabid gunplay above the shoulder of 
+                some armed woman running around. She is wearing an oversized backpack and what
+                seems to be a sturdy helmet. Constantly entering buildings, she puts everything in her bag.
+                <i>13 remaining </i> says the screen, followed by the sound of gunfire. <i>9 remaining</i>. The
+                woman takes a shot in the distance. <i>8 remaining</i>. Sporadic violence continues to unfold
+                continues until the woman is suddenly the focus of heavy gunfire and she dies. <i>You placed 6th</i>!
+                </p>
+            </div>
+            <div class="row">
+                <p>
+                These each refer to some game, and what might be observed from a <span class="inspect" title="quick, relative to the length of the game"> quick look</span>
+                of regular gameplay. Can you guess what each example references? One thing each of these have in common is they
+                describe the gameflow of certain popular games. What makes them popular is beyond the scope of this
+                random thought, but I believe that they each vary in complexity when it comes to learning their respective gameplay 'basics'.
+                </p>
+            </div>
             
             <!--Expand in week 2-->
 
         </article>
 
         <!--Further Elaboration-->
-        <section>
+        <section class="container">
+            <div class="row">
                 <h3>A Simple Core</h3>
                 <p>
                 Difficulty and challenge in games are two seperate concepts. This distinction has already been discussed by numerous videos and 
                 articles respectively, and more. 
                 </p>
+            </div>
 
             <!--Expand in week 2-->
+            <div class="row">
                 <b>To summarize:</b>
-                <ul>
+                <ul style="list-style-type: none">
                         <li>Difficulty                
                             <ul>
                                 <li>Difficulty</li>
@@ -76,6 +99,7 @@
                 <p>
                     Now that we are on the same page, 
                 </p>
+            </div>
 
         </section>
         <!--A Supportive Example-->
@@ -83,10 +107,97 @@
                 <h3>Further</h3>
             
             <!--Expand in week 2-->
-        </section>
+        </section>  
+        
         <p>
-            Will it update? seems just like browser-sync. Which makes sense, given its history.
+            row and col size stuff below. Bar width will be different based on window width.
         </p>
+        <div class="container">
+            <div class="row grey1">
+                <div class="col-md red">
+                    Red
+                </div>
+                <div class="col-md green">
+                    Green
+                </div>
+                <div class="col-md blue">
+                    Blue
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row grey2">
+                <div class="col-lg red">
+                    Red
+                </div>
+                <div class="col-lg-5 green">
+                    Green
+                </div>
+                <div class="col-lg blue">
+                    Blue
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row grey3">
+                <div class="col-md-2 col-xl-5 red">
+                    Red
+                </div>
+                <div class="col-md green">
+                    Green
+                </div>
+                <div class="col-md-3 col-xl-5 blue">
+                    Blue
+                </div>
+            </div>
+        </div>
+
+        <p>
+            col-auto
+        </p>
+        <div class="container">
+            <div class="row grey3">
+                <div class="col-md-auto red">
+                    Red
+                </div>
+                <div class="col-md-auto green">
+                    Green
+                </div>
+                <div class="col-md-auto blue">
+                    Blue
+                </div>
+            </div>
+        </div>
+        <div class="container">
+                <div class="row grey3">
+                    <div class="col-md-auto offset-1 red">
+                        Red
+                    </div>
+                    <div class="col-md-auto offset-2 green">
+                        Green
+                    </div>
+                    <div class="col-md-auto offset-4 blue">
+                        Blue
+                    </div>
+                </div>
+            </div>
+
+        <footer>
+                <ul class= "horizontal-list">
+                    <li><ul>
+                        <li> Home </li>
+                        <li> About </li>
+                        <li> RandomT </li>
+                        <li> Contact </li>
+                    </ul></li>
+                    <li><ul>
+                        <li> Resources </li>
+                    </ul></li>
+                </ul>
+                <div>
+                    Neil
+                </div>
+        </footer>
     </body>
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
